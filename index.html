@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Weather in ya area</title>
+</head>
+<body>
+    <br>
+    <!-- search bar -->
+    <div class="container" name="f1RacerForm" id="f1RacerForm">
+        <div class="mx-auto" style="width: 400px;">
+            <label for="zip">Zip Code</label>
+            <input type="text" name="zip" id='zip'>
+            <button type="button" class="btn btn-primary btn-sm" onClick="getWeather()">Submit Info</button>
+        </div>
+    </div>
+<br>
+<!-- card table -->
+    <br>
+    <div class="mx-auto" style="width: 400px;">
+        <div class="row">
+            <div class="col-sm-6">
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header">HIGH</div>
+                <div class="card-body">
+                <h5 class="card-title" id="max"></h5>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-sm-6">
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">LOW</div>
+                <div class="card-body">
+                <h5 class="card-title" id="low"></h5>
+            </div>
+            </div>
+        </div>
+
+        <div class="card text-white bg-secondary mb-3" ">
+            <div class="card-header">FORECAST</div>
+            <div class="card-body">
+            <h5 class="card-title" id="temp"></h5>
+        </div>
+        </div>
+        <div class="card text-white bg-secondary mb-3" ">
+            <div class="card-header">HUMIDITY</div>
+            <div class="card-body">
+            <h5 class="card-title" id="humidity"></h5>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+</body>
+</html>
